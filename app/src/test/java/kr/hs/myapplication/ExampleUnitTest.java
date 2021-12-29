@@ -1,4 +1,4 @@
-package kr.hs.hackton0;
+package kr.hs.myapplication;
 
 import org.junit.Test;
 

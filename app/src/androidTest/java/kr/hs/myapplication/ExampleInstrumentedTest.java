@@ -1,4 +1,4 @@
-package kr.hs.hackton0;
+package kr.hs.myapplication;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("kr.hs.hackton0", appContext.getPackageName());
+        assertEquals("kr.hs.myapplication", appContext.getPackageName());
     }
 }
