@@ -4,4 +4,11 @@
     <color name="colorPrimaryDark">#FF7043</color>
     <color name="colorAccent">#FFAB40</color>
     <color name="colorGray">#8C8C8C</color>
+    <color name="purple_500">#FFAB40</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="purple_200">#3700B3</color>
+    <color name="teal_700">#00796B</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#111111</color>
 </resources>

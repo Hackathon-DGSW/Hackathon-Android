@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toTopOf="@+id/join_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -70,11 +80,11 @@
     <Button
         android:id="@+id/check_button"
         style="@style/defaultButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="97dp"
-        android:layout_marginRight="97dp"
         android:text="확인"
+        android:textColor="#111111"
         app:layout_constraintBaseline_toBaselineOf="@+id/join_email"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -87,6 +97,7 @@
         android:layout_marginLeft="36dp"
         android:layout_marginTop="71dp"
         android:text="취소"
+        android:textColor="#111111"
         app:layout_constraintStart_toEndOf="@+id/join_button"
         app:layout_constraintTop_toBottomOf="@+id/join_pwck" />
 
@@ -98,6 +109,7 @@
         android:layout_marginStart="96dp"
         android:layout_marginLeft="96dp"
         android:text="가입"
+        android:textColor="#111111"
         app:layout_constraintBaseline_toBaselineOf="@+id/delete"
         app:layout_constraintStart_toStartOf="parent" />
 

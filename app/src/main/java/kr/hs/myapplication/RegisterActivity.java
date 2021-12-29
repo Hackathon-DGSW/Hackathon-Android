@@ -3,8 +3,11 @@ package kr.hs.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -18,7 +21,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
-
+    TextView textView;
+    String items[] = {"웹", "안드", "서버", "디자인", "임베"};
     private EditText join_email, join_password, join_name, join_pwck;
     private Button join_button, check_button;
     private AlertDialog dialog;
@@ -29,6 +33,12 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_join );
 
+        textView = findViewById(R.id.textView);
+        Spinner spinner = findViewById(R.id.spinner);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, items);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
         //아이디값 찾아주기
         join_email = findViewById( R.id.join_email );
         join_password = findViewById( R.id.join_password );
